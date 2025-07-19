@@ -16,10 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from landing_page import views as landing_page_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', landing_page_views.index, name='index'),
     path('', include("landing_page.urls"), name="landing_page_urls"), 
+    path('admin/', admin.site.urls),
 ]
