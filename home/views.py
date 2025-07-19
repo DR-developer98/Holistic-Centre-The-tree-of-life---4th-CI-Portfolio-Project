@@ -5,4 +5,4 @@ from .models import Employee
 # Create your views here.
 class EmployeeList(generic.ListView):
     queryset = Employee.objects.all()
-    template_name = "landing_page.html"
+    template_name = "home/index.html"

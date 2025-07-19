@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+  <h1>The tree of life</h1>
+  <h2>Olistic centre</h2>
+  <img src="#" alt="hero-image-landing-page" />
+</div>
+<div>
+  <h2>Our team</h2>
+  {% for employee in employee_list %}
+  <img src="#" alt="Profile foto employee" />
+  <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
+  <h3>{{ employee.full_name }}</h3>
+  <!-- ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑ -->
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block copyright %} 
+Copyright @ 2025 thetreeoflifeolisticentre.com
+{% endblock copyright %}

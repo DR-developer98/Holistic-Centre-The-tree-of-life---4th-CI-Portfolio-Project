@@ -1,0 +1,42 @@
+[
+    {
+        "model": "landing_page.employee",
+        "pk": null,
+        "fields": {
+            "name": "Everhart",
+            "last_name": "Schippers",
+            "slug": "everhart-schippers",
+            "bio": "<p><strong>Everhart Schippers</strong> combines his expertise as a <em>physiotherapist</em> with his training in <em>Reiki</em> to create a powerful blend of physical and energetic healing. His treatments integrate <em>body alignment</em> and <em>energy clearing</em>, guiding clients toward deep restoration and long-term balance.</p>"
+        }
+    },
+    {
+        "model": "landing_page.employee",
+        "pk": null,
+        "fields": {
+            "name": "Saskia",
+            "last_name": "van der Hoeven",
+            "slug": "saskia-van-der-hoeven",
+            "bio": "<p><strong>Saskia van der Hoeven</strong> is a gentle and intuitive practitioner of <em>reflexology</em> and <em>mindfulness coaching</em>. Her sessions combine <em>foot therapy</em> with <em>breathwork</em> to release emotional blockages and awaken spiritual clarity in her clients.</p>"
+        }
+    },
+    {
+        "model": "landing_page.employee",
+        "pk": null,
+        "fields": {
+            "name": "Vromme",
+            "last_name": "Goossens",
+            "slug": "vromme-goossens",
+            "bio": "<p><strong>Vromme Goossens</strong> holds a dual background in <em>psychology</em> and <em>Ayurvedic therapies</em>. Her practice draws on emotional wellness and traditional Eastern wisdom. She offers <em>guided meditation</em> sessions and <em>energy balancing treatments</em> to help clients reconnect with their inner calm and strength.</p>"
+        }
+    },
+    {
+        "model": "landing_page.employee",
+        "pk": null,
+        "fields": {
+            "name": "Wit",
+            "last_name": "van der Velden",
+            "slug": "wit-van-der-velden",
+            "bio": "<p><strong>Wit van der Velden</strong> is a certified <em>naturopath</em> and <em>nutrition therapist</em> who believes in the healing power of nature and food. He specializes in <em>plant-based therapies</em>, offering customized <em>herbal protocols</em> and <em>nutritional guidance</em> to support physical vitality and balance.</p>"
+        }
+    }
+]

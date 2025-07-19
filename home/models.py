@@ -9,6 +9,9 @@ class Employee(models.Model):
     slug = models.SlugField(max_length=100, unique=True)
     bio = models.TextField()
 	
-    def __str__ (self):
-	    return self.name
+    # ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
+    @property
+    def full_name(self):
+        return f"{self.name} {self.last_name}"
+    # ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
 
