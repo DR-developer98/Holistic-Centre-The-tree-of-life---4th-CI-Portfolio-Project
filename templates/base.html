@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,21 +18,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
+
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -49,7 +41,7 @@
               <a class="nav-link" href="#">Get in touch</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex">
             <button class="btn btn-outline-success" type="submit">
               Make an appointment
             </button>
@@ -57,34 +49,77 @@
         </div>
       </div>
     </nav>
+
+    <!-- Main content -->
     <main>
       <p>Hello, World!</p>
     </main>
-    <footer class="mt-auto">
-      <div class="bg-body-tertiary d-flex justify-content-center">
-        <a class="navbar-brand" href="#">Logo</a>
-      </div>
-      <div>
-        <p>Olisticlaan 47</p>
-        <p>treeoflife@olcentre.com</p>
-        <div>
-          <p>Copyright @ 2025 thetreeoflifeolisticcentre.com</p>
-          <ul>
-            <li><a href="https://www.Instagram.com" target="_blank" rel="noopener"
-                aria-label="Follow us on Instagram (opens in a new tab)" alt="Login page Instagram"><i
-                    class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.Facebook.com" target="_blank" rel="noopener"
-                aria-label="Follow us on Facebook (opens in a new tab)" alt="Login page Facebook"><i
-                    class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.Linkedin.com" target="_blank" rel="noopener"
-                aria-label="Connect with us on LinkedIn (opens in a new tab)"  alt="Login page LinkedIn"><i
-                    class="fa-brands fa-linkedin-in"></i></a></li>
-          </ul>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-body-tertiary">
+      <div class="ms-3 d-flex flex-column flex-wrap">
+        <div class="align-self-center">
+          <a href="#">Logo</a>
         </div>
+        <div class="d-flex flex-row justify-content-between">
+          <div class="ms-5">
+            <address>
+              <strong
+                ><i class="fa-solid fa-location-dot"></i> Olistic centre "The
+                tree of life"</strong
+              ><br />
+              Massagelaan 14<br />
+              Kromme-ellebogenstad 0000BH <br />
+              The Netherlands
+            </address>
+            <div>
+              <p>
+                <i class="fa-solid fa-phone"></i> +31 6 1234455<br />
+                <i class="fa-regular fa-paper-plane"></i>
+                treeoflife@olcentre.com
+              </p>
+            </div>
+          </div>
+          <div class="me-5">
+            <a
+              href="https://www.Instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Check out our Instagram (opens in a new tab)"
+              alt="Login page Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.Facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Check out our Facebook page (opens in a new tab)"
+              alt="Login page Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.Linkedin.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Connect with us on LinkedIn (opens in a new tab)"
+              alt="Login page LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <p>
+            {% block copyright %}
+            Copyright 
+            {% endblock copyright %}
+        </p>
       </div>
     </footer>
+
     <!-- Fontawesome JS -->
-    <script src="https://kit.fontawesome.com/95a6549ce3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/95a6549ce3.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap JS -->
     <script
@@ -92,6 +127,5 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
