@@ -6,6 +6,17 @@
   <img src="#" alt="hero-image-treatments-page" />
 </div>
 <div>
-    <h2>Our offer for you:</h2>
+    <h2 class="text-center">Our offer for you:</h2>
 </div>
+{% for treat in treatments %}
+<div class="card w-75 mb-3 ms-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ treat.name }}</h5>
+    <p class="card-text">{{ treat.description }}</p>
+    <p class="card-text"><strong>Duration:</strong> {{ treat.duration }}</p>
+    <p class="card-text"><strong>Price:</strong> €{{ treat.price }}</p>
+    <a href="#" class="btn appointment">Make an appointment</a>
+  </div>
+</div>
+{% endfor %}
 {% endblock%}

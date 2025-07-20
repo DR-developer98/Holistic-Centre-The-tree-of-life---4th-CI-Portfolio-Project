@@ -7,7 +7,8 @@ def treatments_list(request):
     Renders the Treatments page
     """
     treatments = Treatment.objects.all()
-
+    print(treatments)
+    
     return render(
         request,
         "treatments/treatments.html",

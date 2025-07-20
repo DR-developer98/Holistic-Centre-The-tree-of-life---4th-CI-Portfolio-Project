@@ -9,17 +9,7 @@
     color: var(--secondary-color);
 }
 
-/*Navbar styles*/
-nav {
-    background-color: var(--primary-color);
-}
-
-.nav-link {
-    color: var(--secondary-color);
-    font-weight: bold;
-}
-
-#nav-appointment {
+.appointment {
     border: 2px solid var(--primary-color);
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -28,10 +18,20 @@ nav {
     padding: 10px;
 }
 
-#nav-appointment:hover {
+.appointment:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/*Navbar styles*/
+nav {
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 /*Main styles*/
@@ -67,3 +67,11 @@ footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
+/*TREATMENTS.HTML*/
+.card {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
