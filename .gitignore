@@ -9,4 +9,5 @@ node_modules/
 cloudinary_python.txt
 .venv/
 env.py
-.fixtures/
+home.fixtures/
+treatments.fixtures/

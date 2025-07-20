@@ -1,0 +1,98 @@
+[
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Guided Meditation & Energy Balancing",
+            "slug": "guided-meditation-energy-balancing",
+            "description": "A calming session combining breath awareness and subtle energy work to clear emotional blocks and restore inner peace. Ideal for stress and emotional fatigue.",
+            "duration": "60 min",
+            "price": "40.00",
+            "practitioner": 3
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Ayurvedic Wellness Session",
+            "slug": "ayurvedic-wellness-session",
+            "description": "A customized treatment that includes Ayurvedic consultation, herbal compress massage, and lifestyle guidance based on your dosha type.",
+            "duration": "90 min",
+            "price": "70.00",
+            "practitioner": 3
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Herbal Nutrition Consultation",
+            "slug": "herbal-nutrition-consultation",
+            "description": "In-depth assessment followed by a tailored nutrition plan using plant-based remedies and natural supplements to boost vitality and balance.",
+            "duration": "60 min",
+            "price": "70.00",
+            "practitioner": 4
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Digestive Rejuvenation Protocol",
+            "slug": "digestive-rejuvenation-protocol",
+            "description": "Focused on gut health, this package includes a herbal tea blend, nutritional coaching, and reflex-stimulation techniques.",
+            "duration": "75 min",
+            "price": "60.00",
+            "practitioner": 4
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Therapeutic Body Alignment",
+            "slug": "therapeutic-body-alignment",
+            "description": "Physical therapy meets energy healing: manual manipulation combined with Reiki to release tension and align body posture holistically.",
+            "duration": "60 min",
+            "price": "75.00",
+            "practitioner": 1
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Holistic Rehab Intensive",
+            "slug": "holistic-rehab-intensive",
+            "description": "A comprehensive program for chronic physical imbalances, merging physiotherapy with chakra-centered healing for full-body renewal.",
+            "duration": "90 min",
+            "price": "70.00",
+            "practitioner": 1
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Mindfulness & Reflexology Session",
+            "slug": "mindfulness-reflexology-session",
+            "description": "Gentle footwork targeting key zones while guiding the client in breathwork and present-moment awareness. Ideal for emotional reset.",
+            "duration": "60 min",
+            "price": "70.00",
+            "practitioner": 2
+        }
+    },
+    {
+        "model": "treatments.treatment",
+        "pk": null,
+        "fields": {
+            "name": "Spiritual Release Therapy",
+            "slug": "spiritual-release-therapy",
+            "description": "Combines acupressure through the feet and intuitive coaching to let go of emotional patterns and spark spiritual clarity.",
+            "duration": "75 min",
+            "price": "80.00",
+            "practitioner": 2
+        }
+    }
+]

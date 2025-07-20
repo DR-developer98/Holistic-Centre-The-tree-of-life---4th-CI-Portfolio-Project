@@ -1,6 +1,4 @@
-{% extends "base.html" %} 
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div>
   <h1 class="text-center">The tree of life</h1>
   <h2 class="text-center">Olistic centre</h2>
@@ -15,12 +13,14 @@
         <img src="#" alt="Profile foto employee" />
         <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
         <h3>{{ employee.full_name }}</h3>
-        <a class="btn" id="get-to-know-them" href="#" role="button" >Get to know them</a>
+        <a class="btn" id="get-to-know-them" href="#" role="button"
+          >Get to know them</a
+        >
       </div>
       <!-- ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑ -->
       {% endfor %}
     </div>
   </div>
-  {% endblock %} {% block copyright %} Copyright @ 2025
-  thetreeoflifeolisticentre.com {% endblock copyright %}
 </div>
+{% endblock %} {% block copyright %} Copyright @ 2025
+thetreeoflifeolisticentre.com {% endblock copyright %}
