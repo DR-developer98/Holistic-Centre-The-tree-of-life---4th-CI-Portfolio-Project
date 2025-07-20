@@ -1,6 +1,6 @@
 [
     {
-        "model": "landing_page.employee",
+        "model": "home.employee",
         "pk": null,
         "fields": {
             "name": "Everhart",
@@ -10,7 +10,7 @@
         }
     },
     {
-        "model": "landing_page.employee",
+        "model": "home.employee",
         "pk": null,
         "fields": {
             "name": "Saskia",
@@ -20,7 +20,7 @@
         }
     },
     {
-        "model": "landing_page.employee",
+        "model": "home.employee",
         "pk": null,
         "fields": {
             "name": "Vromme",
@@ -30,7 +30,7 @@
         }
     },
     {
-        "model": "landing_page.employee",
+        "model": "home.employee",
         "pk": null,
         "fields": {
             "name": "Wit",

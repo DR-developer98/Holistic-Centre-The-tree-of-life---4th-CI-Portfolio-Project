@@ -6,3 +6,5 @@ from .models import Employee
 class EmployeeList(generic.ListView):
     queryset = Employee.objects.all()
     template_name = "home/index.html"
+
+    

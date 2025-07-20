@@ -1,13 +1,11 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div>
   <h1>The tree of life</h1>
   <h2>Olistic centre</h2>
   <img src="#" alt="hero-image-landing-page" />
 </div>
-<div>
-  <h2>Our team</h2>
+<div class="">
+  <h2 class="text-center">Our team</h2>
   {% for employee in employee_list %}
   <img src="#" alt="Profile foto employee" />
   <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
@@ -15,8 +13,5 @@
   <!-- ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑ -->
   {% endfor %}
 </div>
-{% endblock %}
-
-{% block copyright %} 
-Copyright @ 2025 thetreeoflifeolisticentre.com
-{% endblock copyright %}
+{% endblock %} {% block copyright %} Copyright @ 2025
+thetreeoflifeolisticentre.com {% endblock copyright %}
