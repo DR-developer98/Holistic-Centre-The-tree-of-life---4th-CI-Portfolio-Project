@@ -1,6 +1,7 @@
 :root{
     --primary-color: #254633;
     --secondary-color: #ecdbb3;
+    --page-text-color: #1c3627;
 }
 
 /*General styles*/
@@ -15,6 +16,7 @@ nav {
 
 .nav-link {
     color: var(--secondary-color);
+    font-weight: bold;
 }
 
 #nav-appointment {
@@ -32,10 +34,10 @@ nav {
     color: var(--secondary-color);
 }
 
-
 /*Main styles*/
 main {
     background-color: var(--secondary-color);
+    color: var(--page-text-color);
 }
 
 /*Footer styles*/
@@ -46,6 +48,22 @@ footer {
 
 #social-media>a>i {
     color: var(--secondary-color);
-    font-size: 35px;
+    font-size: 1.4rem;
     margin: 16px 10px;
+}
+
+/*INDEX.HTML*/
+#get-to-know-them {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#get-to-know-them:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }

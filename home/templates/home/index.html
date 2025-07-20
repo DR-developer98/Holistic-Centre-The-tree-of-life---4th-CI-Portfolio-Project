@@ -1,17 +1,26 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} 
+
+{% block content %}
 <div>
-  <h1>The tree of life</h1>
-  <h2>Olistic centre</h2>
+  <h1 class="text-center">The tree of life</h1>
+  <h2 class="text-center">Olistic centre</h2>
   <img src="#" alt="hero-image-landing-page" />
 </div>
-<div class="">
+<div>
   <h2 class="text-center">Our team</h2>
-  {% for employee in employee_list %}
-  <img src="#" alt="Profile foto employee" />
-  <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
-  <h3>{{ employee.full_name }}</h3>
-  <!-- ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑ -->
-  {% endfor %}
+  <div class="container">
+    <div class="row">
+      {% for employee in employee_list %}
+      <div class="col-12 col-md-6 col-lg-3 mb-4 text-center">
+        <img src="#" alt="Profile foto employee" />
+        <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
+        <h3>{{ employee.full_name }}</h3>
+        <a class="btn" id="get-to-know-them" href="#" role="button" >Get to know them</a>
+      </div>
+      <!-- ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑ -->
+      {% endfor %}
+    </div>
+  </div>
+  {% endblock %} {% block copyright %} Copyright @ 2025
+  thetreeoflifeolisticentre.com {% endblock copyright %}
 </div>
-{% endblock %} {% block copyright %} Copyright @ 2025
-thetreeoflifeolisticentre.com {% endblock copyright %}

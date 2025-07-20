@@ -1,4 +1,5 @@
 {% load static %}
+{% url 'home' as home_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +24,12 @@
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">Logo</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="navbar-brand logo" href="{% url 'home' %}">Logo</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
@@ -43,7 +47,11 @@
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline-success" id="nav-appointment" type="submit">
+            <button
+              class="btn btn-outline-success"
+              id="nav-appointment"
+              type="submit"
+            >
               Make an appointment
             </button>
           </form>
@@ -62,7 +70,7 @@
     <footer class="mt-auto">
       <div class="ms-3 d-flex flex-column flex-wrap">
         <div class="align-self-center">
-          <a class="logo" href="#">Logo</a>
+          <a class="logo" href="{% url 'home' %}">Logo</a>
         </div>
         <div class="d-flex flex-row justify-content-between">
           <div class="ms-5">
