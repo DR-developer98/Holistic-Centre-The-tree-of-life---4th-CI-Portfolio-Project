@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block content %} {% load static %} {% load
+crispy_forms_tags %}
+
+<div>
+  <h1 class="text-center">Contact</h1>
+  <img src="#" alt="hero-image-treatments-page" />
+</div>
+<div>
+  <h2 class="text-center mb-2">Get in touch with us!</h2>
+</div>
+
+<div
+  class="container d-flex justify-content-center align-items-center"
+  id="cinfo-container"
+>
+  <div class="row w-100">
+    <div class="col-lg-8 col-md-10 text-justify mx-3">
+      <p>
+        For any enquiries or requests concerning our treatments, please feel
+        free to get in touch with us! This is possible:
+      </p>
+      <ul>
+        <li>
+          via <strong>e-mail</strong> at
+          <i class="fa-regular fa-paper-plane"></i>
+          <em>treeoflife@outlook.com</em>
+        </li>
+        <li>
+          at this <strong>phone number</strong>
+          <i class="fa-solid fa-phone"></i> 123344556
+        </li>
+        <li>
+          by paying us a visit at Massagelaan 14, Kromme-ellebogenstad 0000BH,
+          the Netherlands on:
+          <ul>
+            <li><strong>Mon-Fri</strong>: from 9:00 to 17:00</li>
+            <li><strong>Sat</strong>: from 10:30 to 17:00.</li>
+          </ul>
+        </li>
+        <li>or by filling out the form here below.</li>
+      </ul>
+      <p>We cannot wait to start working with you!</p>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="row w-100">
+    <div class="col-lg-8 col-md-10 text-justify mx-3">
+      <div class="mb-3">
+        <form method="POST">
+          {{ enquiry_form | crispy }} 
+          {% csrf_token %}
+          <button class="btn btn-outline-success" type="submit">Submit</button>
+          <button class="btn btn-outline-success" type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% endblock%}
+</div>

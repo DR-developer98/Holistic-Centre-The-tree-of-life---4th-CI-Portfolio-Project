@@ -76,3 +76,9 @@ footer {
     color: var(--page-text-color);
 }
 
+/*GET-IN-TOUCH.HTML*/
+#cinfo-container {
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+}
+

@@ -3,6 +3,5 @@ from django import forms
 
 class EnquiryForm(forms.ModelForm):
     class Meta:
-        model =  Enquiry
+        model = Enquiry
         fields = ('name_visitor', 'email', 'message')
-        

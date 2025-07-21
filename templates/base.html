@@ -1,6 +1,7 @@
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'treatments' as treatments_url %}
+{% url 'contact' as get_in_touch_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +42,7 @@
               <a class="nav-link" href="#">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get in touch</a>
+              <a class="nav-link" href="{% url 'contact' %}">Get in touch</a>
             </li>
           </ul>
           <form class="d-flex">
