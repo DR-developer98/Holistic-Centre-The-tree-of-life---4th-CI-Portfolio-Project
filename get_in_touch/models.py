@@ -8,8 +8,10 @@ class Enquiry(models.Model):
     email = models.EmailField(max_length=100)
     message = models.TextField()
     created_on = models.TimeField(auto_now_add=True)
-
     # ↓↓↓ CREDIT: I think therefore I blog CI WTP ↓↓↓
+    processed = models.BooleanField(default=False)
+
+
     class Meta:
         ordering = ["-created_on"] 
     # ↑↑↑ CREDIT: I think therefore I blog CI WTP ↑↑↑
