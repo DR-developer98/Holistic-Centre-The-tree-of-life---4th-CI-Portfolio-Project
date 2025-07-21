@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'home',
     'treatments',
+    'get_in_touch',
 ]
 
 MIDDLEWARE = [

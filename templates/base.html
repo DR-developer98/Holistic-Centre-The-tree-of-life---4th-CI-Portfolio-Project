@@ -1,5 +1,6 @@
 {% load static %}
 {% url 'home' as home_url %}
+{% url 'treatments' as treatments_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +32,10 @@
         >
           <ul class="navbar-nav me-3 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Treatments</a>
+              <a class="nav-link" href="{% url 'treatments' %}">Treatments</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Our Team</a>

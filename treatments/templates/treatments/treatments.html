@@ -9,13 +9,20 @@
     <h2 class="text-center">Our offer for you:</h2>
 </div>
 {% for treat in treatments %}
-<div class="card w-75 mb-3 ms-3">
-  <div class="card-body">
-    <h5 class="card-title">{{ treat.name }}</h5>
-    <p class="card-text">{{ treat.description }}</p>
-    <p class="card-text"><strong>Duration:</strong> {{ treat.duration }}</p>
-    <p class="card-text"><strong>Price:</strong> €{{ treat.price }}</p>
-    <a href="#" class="btn appointment">Make an appointment</a>
+<div class="card mb-3 mx-2 col-12 col-md-10">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="treatment-image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ treat.name|safe }}</h5>
+        <p class="card-text">{{ treat.description|safe }}</p>
+        <p class="card-text"><strong>Duration:</strong> {{ treat.duration }}</p>
+        <p class="card-text"><strong>Price:</strong> €{{ treat.price }}</p>
+        <a href="#" class="btn appointment">Make an appointment</a>
+      </div>
+    </div>
   </div>
 </div>
 {% endfor %}
