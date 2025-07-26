@@ -1,8 +1,84 @@
 :root{
     --primary-color: #254633;
     --secondary-color: #ecdbb3;
+    --page-text-color: #1c3627;
 }
 
-nav{
+/*General styles*/
+.logo {
+    color: var(--secondary-color);
+}
+
+.appointment {
+    border: 2px solid var(--page-text-color);
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.appointment:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--page-text-color);
+    color: var(--secondary-color);
+}
+
+/*Navbar styles*/
+nav {
     background-color: var(--primary-color);
 }
+
+.nav-link {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Main styles*/
+main {
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
+/*Footer styles*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#social-media>a>i {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    margin: 16px 10px;
+}
+
+/*INDEX.HTML*/
+#get-to-know-them {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#get-to-know-them:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/*TREATMENTS.HTML*/
+.card {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
+/*GET-IN-TOUCH.HTML*/
+#cinfo-container {
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+}
+

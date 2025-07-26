@@ -1,5 +1,6 @@
-{% extends "base.html" %} {% block content %} {% load static %} {% load
-crispy_forms_tags %}
+{% extends "base.html" %} {% block content %} 
+{% load static %} 
+{% load crispy_forms_tags %}
 
 <div>
   <h1 class="text-center">Contact</h1>
@@ -43,13 +44,13 @@ crispy_forms_tags %}
     </div>
   </div>
 </div>
-
+<br>
 <div class="container d-flex justify-content-center align-items-center">
   <div class="row w-100">
     <div class="col-lg-8 col-md-10 text-justify mx-3">
       <div class="mb-3">
         <form method="POST">
-          {{ enquiry_form | crispy }} 
+          {{ enquiry_form|crispy }} 
           {% csrf_token %}
           <button class="btn btn-outline-success" type="submit">Submit</button>
           <button class="btn btn-outline-success" type="reset">Reset</button>
