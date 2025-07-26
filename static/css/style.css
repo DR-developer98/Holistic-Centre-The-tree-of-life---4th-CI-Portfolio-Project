@@ -9,7 +9,7 @@
     color: var(--secondary-color);
 }
 
-.appointment {
+.btn {
     border: 2px solid var(--page-text-color);
     background-color: var(--secondary-color);
     color: var(--page-text-color);
@@ -18,7 +18,7 @@
     padding: 10px;
 }
 
-.appointment:hover {
+.btn:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--page-text-color);
     color: var(--secondary-color);
