@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'home',
     'treatments',
     'get_in_touch',
+    'accounts',
 ]
 
 SITE_ID = 1
