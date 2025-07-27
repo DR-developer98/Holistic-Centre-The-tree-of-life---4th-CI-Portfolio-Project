@@ -42,8 +42,8 @@ def make_appointment(request):
                 appointment.save()
                 # ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑
                 messages.success(request, "Your appointment has been booked!")
-    else:
-        appointment_form = AppointmentForm()
+    
+    appointment_form = AppointmentForm()
 
     return render(
         request,

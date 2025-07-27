@@ -11,7 +11,6 @@ class Enquiry(models.Model):
     # ↓↓↓ CREDIT: I think therefore I blog CI WTP ↓↓↓
     processed = models.BooleanField(default=False)
 
-
     class Meta:
         ordering = ["-created_on"] 
     # ↑↑↑ CREDIT: I think therefore I blog CI WTP ↑↑↑
