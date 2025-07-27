@@ -6,7 +6,7 @@ from django.contrib import messages
 # Create your views here.
 def contact_tol(request):
     """
-    Renders the form in the get in touch page
+    Renders the contact form in the get in touch page
     """
     enquiry_form = EnquiryForm()
 
