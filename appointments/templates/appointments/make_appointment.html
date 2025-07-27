@@ -16,7 +16,7 @@
     <div class="col-lg-8 col-md-10 text-justify mx-3">
       <div class="mb-3">
         <form method="POST">
-          {{ enquiry_form|crispy }} {% csrf_token %}
+          {{ appointment_form|crispy }} {% csrf_token %}
           <div class="d-flex justify-content-between mt-3">
             <button class="btn btn-outline-success" type="submit">
               Submit

@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .models import Enquiry
 from .forms import EnquiryForm
 from django.contrib import messages
 
