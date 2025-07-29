@@ -1,18 +1,18 @@
 {% extends "base.html" %} 
-
 {% block content %}
-<div>
-  <h1 class="text-center">Treatments</h1>
-  <img src="#" alt="hero-image-treatments-page" />
+<div class="hero-image" id="hero-treatments">
+  <div class="overlay">
+    <h1 class="text-center">Treatments</h1>
+  </div>
 </div>
 <div>
-    <h2 class="text-center">Our offer for you:</h2>
+  <h2 class="text-center mt-3 mb-2">Our offer for you:</h2>
 </div>
 {% for treat in treatments %}
 <div class="card mb-3 mx-2 col-12 col-md-10">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="treatment-image">
+      <img src="..." class="img-fluid rounded-start" alt="treatment-image" />
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -25,5 +25,4 @@
     </div>
   </div>
 </div>
-{% endfor %}
-{% endblock%}
+{% endfor %} {% endblock%}
