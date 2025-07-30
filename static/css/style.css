@@ -60,6 +60,12 @@
     color: var(--secondary-color);
 }
 
+.card {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
 /*Navbar styles*/
 nav {
     background-color: var(--primary-color);
@@ -112,12 +118,6 @@ footer img.logo {
 /*TREATMENTS.HTML*/
 #hero-treatments {
     background: url("../images/hero-image-treatments.jpg") no-repeat center center/cover;
-}
-
-.card {
-    border: 2px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    color: var(--page-text-color);
 }
 
 /*GET-IN-TOUCH.HTML*/

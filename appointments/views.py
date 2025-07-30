@@ -6,7 +6,7 @@ from .models import Appointment
 from .forms import AppointmentForm
 from django.contrib import messages
 
-# Create your views here.
+
 @login_required
 def make_appointment(request):
     """
@@ -20,7 +20,8 @@ def make_appointment(request):
         if appointment_form.is_valid():
             # ↓↓↓ .cleaned_data method CREDIT: Stackoverflow ↓↓↓
             treatment = appointment_form.cleaned_data['treatment']
-            appointment_date = appointment_form.cleaned_data['appointment_date']
+            appointment_date = \
+                appointment_form.cleaned_data['appointment_date']
             time = appointment_form.cleaned_data['time']
             # ↑↑↑ .cleaned_data method CREDIT: Stackoverflow ↑↑↑
             employee = treatment.practitioner
@@ -35,14 +36,15 @@ def make_appointment(request):
             if conflict:
                 messages.error(request, "This time slot has already been taken. Please select another one.")
             else:
-                # ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓
+                # ↓↓↓ CREDIT:
+                # I think therefore I blog, Code Institute Project ↓↓↓
                 appointment = appointment_form.save(commit=False)
                 appointment.customer = request.user
                 appointment.employee = employee
                 appointment.save()
-                # ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑
-                messages.success(request, "Your appointment has been booked!")
-    
+                # ↑↑↑ CREDIT:
+                # I think therefore I blog, Code Institute Project ↑↑↑
+                messages.success(request, "Your appointment has been booked!")   
     appointment_form = AppointmentForm()
 
     return render(
@@ -50,3 +52,17 @@ def make_appointment(request):
         'appointments/make_appointment.html',
         {'appointment_form': appointment_form}
         )
+
+
+@login_required
+def user_appointments(request):
+    """
+    Display all appointments made by the currently logged-in user
+    """
+    appointments = Appointment.objects.filter(customer=request.user).order_by('appointment_date', 'time')
+
+    return render(
+        request,
+        'appointments/my_appointments.html',
+        {'appointments': appointments}
+    )

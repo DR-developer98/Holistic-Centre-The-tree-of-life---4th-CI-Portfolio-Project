@@ -22,7 +22,10 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('contact/', include("get_in_touch.urls"), name="get_in_touch_urls"),
-    path('makeappointment/', include('appointments.urls'), name="appointments_urls"),
+    path('makeappointment/', include('appointments.urls'),
+         name="appointments_urls"),
+    path('myappointments/', include('appointments.urls'),
+         name="appointments_urls"),
     path('summernote/', include('django_summernote.urls')),
     path('treatments/', include("treatments.urls"), name="treatments.urls"),
 ]
