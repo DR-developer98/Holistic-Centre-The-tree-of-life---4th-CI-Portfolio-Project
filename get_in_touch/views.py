@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import EnquiryForm
 from django.contrib import messages
 
@@ -17,9 +17,13 @@ def contact_tol(request):
                 request, messages.SUCCESS,
                 'Thank you for reaching out to us! We will make sure to get back to you within 2 working days.'
             )
+            #↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
+            return redirect('contact')
 
-    enquiry_form = EnquiryForm()
-
+    else:
+        enquiry_form = EnquiryForm()
+    #↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
+    
     return render(
         request,
         "get_in_touch/contact.html",

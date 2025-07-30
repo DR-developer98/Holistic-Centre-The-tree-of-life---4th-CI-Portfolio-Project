@@ -14,12 +14,23 @@
   </div>
 </div>
 <div>
-  <h2 class="text-center mt-3">Our team</h2>
+  <h2 class="text-center mt-3 mb-2">Our team</h2>
   <div class="container">
-    <div class="row">
+    <div class="row mx-3">
       {% for employee in employee_list %}
       <div class="col-12 col-md-6 col-lg-3 mb-4 text-center">
-        <img src="#" alt="Profile foto employee" />
+        {% if "nobody" in employee.featured_image.url %}
+      <img
+        src="{% static 'images/nobody.jpg' %}"
+        alt="placeholder image"
+      />
+      {% else %}
+      <img
+        class="scale"
+        src="{{ employee.featured_image.url }}"
+        alt="{{ employee.full_name }}"
+      />
+      {% endif %}
         <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
         <h3>{{ employee.full_name }}</h3>
         <a class="btn" id="get-to-know-them" href="#" role="button"

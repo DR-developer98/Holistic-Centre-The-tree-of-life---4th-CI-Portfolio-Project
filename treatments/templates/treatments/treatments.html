@@ -1,4 +1,5 @@
 {% extends "base.html" %} 
+{% load static %}
 {% block content %}
 <div class="hero-image" id="hero-treatments">
   <div class="overlay">
@@ -12,7 +13,19 @@
 <div class="card mb-3 mx-2 col-12 col-md-10">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="treatment-image" />
+      {% if "placeholder-treatment" in treat.featured_image.url %}
+      <img
+        class="scale"
+        src="{% static 'images/placeholder-treatment.jpg' %}"
+        alt="placeholder image"
+      />
+      {% else %}
+      <img
+        class="scale"
+        src="{{ treat.featured_image.url }}"
+        alt="{{ treat.name }}"
+      />
+      {% endif %}
     </div>
     <div class="col-md-8">
       <div class="card-body">

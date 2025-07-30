@@ -39,6 +39,27 @@
     width: 80%;
 }
 
+.hero-home-appointment {
+    background: url("../images/hero-landing-page.jpg") no-repeat center center/cover;
+}
+
+
+.scale {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.active {
+    color: black;
+}
+
+.btn-active {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--page-text-color);
+    color: var(--secondary-color);
+}
+
 /*Navbar styles*/
 nav {
     background-color: var(--primary-color);
@@ -73,10 +94,6 @@ footer img.logo {
 }
 
 /*INDEX.HTML*/
-#hero-home {
-    background: url("../images/hero-landing-page.jpg") no-repeat center center/cover;
-}
-
 #get-to-know-them {
     border: 2px solid var(--secondary-color);
     background-color: var(--primary-color);
@@ -93,6 +110,10 @@ footer img.logo {
 }
 
 /*TREATMENTS.HTML*/
+#hero-treatments {
+    background: url("../images/hero-image-treatments.jpg") no-repeat center center/cover;
+}
+
 .card {
     border: 2px solid var(--primary-color);
     background-color: var(--secondary-color);
@@ -100,6 +121,10 @@ footer img.logo {
 }
 
 /*GET-IN-TOUCH.HTML*/
+#hero-contact {
+    background: url("../images/hero-image-contact.jpg") no-repeat center center/cover;
+}
+
 #cinfo-container {
     border: 2px solid var(--primary-color);
     border-radius: 6px;
