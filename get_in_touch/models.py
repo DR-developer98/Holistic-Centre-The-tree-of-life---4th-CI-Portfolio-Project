@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Enquiry(models.Model):
 
     name = models.CharField(max_length=100)
@@ -16,4 +16,4 @@ class Enquiry(models.Model):
     # ↑↑↑ CREDIT: I think therefore I blog CI WTP ↑↑↑
 
     def __str__(self):
-        return f"Enquiry from {self.name_visitor}"
+        return f"Enquiry from {self.name}"

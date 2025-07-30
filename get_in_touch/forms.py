@@ -1,7 +1,8 @@
 from .models import Enquiry
 from django import forms
 
+
 class EnquiryForm(forms.ModelForm):
     class Meta:
         model = Enquiry
-        fields = ('name', 'email', 'message')
+        fields = ('name', 'subject', 'email', 'message')

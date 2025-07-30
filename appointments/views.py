@@ -44,7 +44,7 @@ def make_appointment(request):
                 appointment.save()
                 # ↑↑↑ CREDIT:
                 # I think therefore I blog, Code Institute Project ↑↑↑
-                messages.success(request, "Your appointment has been booked!")   
+                messages.success(request, "Your appointment has been booked!")
     appointment_form = AppointmentForm()
 
     return render(
@@ -59,7 +59,8 @@ def user_appointments(request):
     """
     Display all appointments made by the currently logged-in user
     """
-    appointments = Appointment.objects.filter(customer=request.user).order_by('appointment_date', 'time')
+    appointments = Appointment.objects.filter(customer=request.user)\
+        .order_by('appointment_date', 'time')
 
     return render(
         request,
