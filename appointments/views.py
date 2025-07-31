@@ -72,14 +72,19 @@ def user_appointments(request):
 
 
 def edit_appointment(request, appointment_id):
+    """
+    Handles appointment modification
+    """
+    # ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓
     appointment = get_object_or_404(
         Appointment, id=appointment_id, customer=request.user)
-    form = AppointmentForm(instance=appointment)
+    appointment_form = AppointmentForm(instance=appointment)
 
     if request.method == "POST":
-        form = AppointmentForm(request.POST, instance=appointment)
-        if form.is_valid():
-            updated = form.save(commit=False)
+        appointment_form = AppointmentForm(request.POST, instance=appointment)
+        # ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑
+        if appointment_form.is_valid():
+            updated = appointment_form.save(commit=False)
             updated.employee = updated.treatment.practitioner
             conflict = Appointment.objects.filter(
                 employee=updated.employee,
@@ -94,8 +99,8 @@ def edit_appointment(request, appointment_id):
             else:
                 updated.save()
                 messages.success(request, "Appointment updated successfully!")
-                return redirect('user_appointments')
+                return redirect('myappointments')
 
     return render(request,
                   'appointments/edit_appointment.html',
-                  {'form': form})
+                  {'appointment_form': appointment_form})
