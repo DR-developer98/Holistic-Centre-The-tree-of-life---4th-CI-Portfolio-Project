@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 # ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
 from django.contrib.auth.decorators import login_required
 # ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
@@ -69,3 +69,33 @@ def user_appointments(request):
         'appointments/my_appointments.html',
         {'appointments': appointments}
     )
+
+
+def edit_appointment(request, appointment_id):
+    appointment = get_object_or_404(
+        Appointment, id=appointment_id, customer=request.user)
+    form = AppointmentForm(instance=appointment)
+
+    if request.method == "POST":
+        form = AppointmentForm(request.POST, instance=appointment)
+        if form.is_valid():
+            updated = form.save(commit=False)
+            updated.employee = updated.treatment.practitioner
+            conflict = Appointment.objects.filter(
+                employee=updated.employee,
+                appointment_date=updated.appointment_date,
+                time=updated.time
+                ).exclude(id=appointment_id).exists()
+
+            if conflict:
+                messages.error(
+                    request,
+                    "This time slot is already taken. Please choose another.")
+            else:
+                updated.save()
+                messages.success(request, "Appointment updated successfully!")
+                return redirect('user_appointments')
+
+    return render(request,
+                  'appointments/edit_appointment.html',
+                  {'form': form})

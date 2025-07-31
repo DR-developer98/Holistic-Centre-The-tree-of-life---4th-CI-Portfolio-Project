@@ -25,54 +25,17 @@
         <p class="card-text">
           <strong>Price:</strong> €{{ appointment.treatment.price }}
         </p>
-        <!-- ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓ -->
         <a class="btn" href="#">
           Cancel appointment
         </a>
         <a class="btn" href="#">
           Modify appointment
         </a>
-        <!-- ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑ -->
       </div>
     </div>
   </div>
 </div>
 {% endfor %}
-
-<!-- Cancellation confirmation modal -->
-<!-- ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓ -->
-<div
-  class="modal fade"
-  id="deleteModal"
-  tabindex="-1"
-  aria-labelledby="deleteModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cancelModalLabel">Cancel appointment?</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        Are you sure you want to cancel this appointment? This action cannot be
-        undone.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
-        <a id="cancelConfirm" href="#" class="btn btn-danger">Cancel</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑☻4 -->
 
 {% endblock%} 
 {% block copyright %} 

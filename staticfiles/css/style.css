@@ -65,6 +65,10 @@
     color: var(--page-text-color);
 }
 
+.higher-weight-text {
+    font-weight: 500;
+}
+
 /*Navbar styles*/
 nav {
     background-color: var(--primary-color);
