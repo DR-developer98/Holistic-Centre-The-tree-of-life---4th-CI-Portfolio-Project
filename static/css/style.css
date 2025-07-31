@@ -131,3 +131,45 @@ footer img.logo {
     border-radius: 6px;
 }
 
+/*MY-APPOINTMENTS.HTML*/
+.app-management {
+    width: 228px;
+}
+
+/*MEDIA QUERIES*/
+/*Media query: tablets and smaller (768px and up)*/
+@media screen and (max-width: 768px) {
+
+    /*General styles*/
+    .card {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    /*Footer*/
+    footer {
+        font-size: 0.7rem;
+    }
+
+    #social-media>a>i {
+        font-size: 0.9rem;
+    }
+
+    /*MY-APPOINTMENTS.HTML*/
+    #cancel-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 621px){
+    #cancel-btn {
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 891px){
+    /*MY-APPOINTMENTS.HTML*/
+    #cancel-btn {
+        margin-bottom: 10px;
+    }
+}

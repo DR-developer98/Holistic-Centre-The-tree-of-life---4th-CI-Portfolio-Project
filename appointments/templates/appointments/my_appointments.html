@@ -10,32 +10,35 @@
   {% endfor %} {% endif %}
 </div>
 <!-- Displaying user's appointments -->
-{% for appointment in appointments %}
-<div class="card mb-3 mx-2 col-12 col-md-10">
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h2 class="card-text">{{ appointment.treatment.name }}</h2>
-        <p class="card-text">
-          <strong>With:</strong> {{ appointment.employee.full_name }}
-        </p>
-        <p class="card-text">
-          <strong>Date:</strong> {{ appointment.appointment_date }}
-        </p>
-        <p class="card-text"><strong>Time:</strong> {{ appointment.time }}</p>
-        <p class="card-text">
-          <strong>Duration:</strong> {{ appointment.treatment.duration }}
-        </p>
-        <p class="card-text">
-          <strong>Price:</strong> €{{ appointment.treatment.price }}
-        </p>
-        <a class="btn" id="cancel-btn" href="#"> Cancel appointment </a>
-        <a class="btn" href="{% url 'edit_appointment' appointment.id %}">
-          Modify appointment
-        </a>
+<div class="d-flex flex-column align-items-center">
+  {% for appointment in appointments %}
+  <div class="card mb-3 mx-2 col-12 col-md-10">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-text">{{ appointment.treatment.name }}</h2>
+          <p class="card-text">
+            <strong>With:</strong> {{ appointment.employee.full_name }}
+          </p>
+          <p class="card-text">
+            <strong>Date:</strong> {{ appointment.appointment_date }}
+          </p>
+          <p class="card-text"><strong>Time:</strong> {{ appointment.time }}</p>
+          <p class="card-text">
+            <strong>Duration:</strong> {{ appointment.treatment.duration }}
+          </p>
+          <p class="card-text">
+            <strong>Price:</strong> €{{ appointment.treatment.price }}
+          </p>
+          <a class="btn app-management" id="cancel-btn" href="#"> Cancel appointment </a>
+          <a class="btn app-management" href="{% url 'edit_appointment' appointment.id %}">
+            Modify appointment
+          </a>
+        </div>
       </div>
     </div>
   </div>
+  {% endfor %}
 </div>
-{% endfor %} {% endblock%} {% block copyright %} Copyright @ 2025
+{% endblock%} {% block copyright %} Copyright @ 2025
 thetreeoflifeholisticentre.com {% endblock copyright %}
