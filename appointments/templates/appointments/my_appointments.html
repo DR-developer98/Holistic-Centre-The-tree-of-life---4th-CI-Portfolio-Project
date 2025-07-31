@@ -4,7 +4,11 @@
 <div>
   <h1 class="text-center mt-3 mb-2">My appointments</h1>
 </div>
-
+<div class="mx-2">
+  {% if messages %} {% for message in messages %}
+  <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+  {% endfor %} {% endif %}
+</div>
 <!-- Displaying user's appointments -->
 {% for appointment in appointments %}
 <div class="card mb-3 mx-2 col-12 col-md-10">
@@ -25,9 +29,7 @@
         <p class="card-text">
           <strong>Price:</strong> €{{ appointment.treatment.price }}
         </p>
-        <a class="btn" href="#">
-          Cancel appointment
-        </a>
+        <a class="btn" id="cancel-btn" href="#"> Cancel appointment </a>
         <a class="btn" href="{% url 'edit_appointment' appointment.id %}">
           Modify appointment
         </a>
@@ -35,9 +37,5 @@
     </div>
   </div>
 </div>
-{% endfor %}
-
-{% endblock%} 
-{% block copyright %} 
-Copyright @ 2025 thetreeoflifeholisticentre.com 
-{% endblock copyright %}
+{% endfor %} {% endblock%} {% block copyright %} Copyright @ 2025
+thetreeoflifeholisticentre.com {% endblock copyright %}

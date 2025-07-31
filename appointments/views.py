@@ -35,7 +35,7 @@ def make_appointment(request):
 
             if conflict:
                 messages.error(request,
-                               "This time slot has already been taken."
+                               "This time slot has already been taken. "
                                "Please select another one.")
             else:
                 # ↓↓↓ CREDIT:
