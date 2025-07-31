@@ -30,15 +30,64 @@
           <p class="card-text">
             <strong>Price:</strong> €{{ appointment.treatment.price }}
           </p>
-          <a class="btn app-management" id="cancel-btn" href="#"> Cancel appointment </a>
-          <a class="btn app-management" href="{% url 'edit_appointment' appointment.id %}">
+          <!-- ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓ -->
+          <a
+            class="btn app-management"
+            id="cancel-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#cancelModal"
+            data-id="{{ appointment.id }}"
+            href="#"
+          >
+            Cancel appointment
+          </a>
+          <!-- ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑ -->
+          <!-- ↓↓↓ href attribute CREDIT: Microsoft Copilot ↓↓↓ -->
+          <a
+            class="btn app-management"
+            href="{% url 'edit_appointment' appointment.id %}"
+          >
             Modify appointment
           </a>
+          <!-- ↑↑↑ href attribute CREDIT: Microsoft Copilot ↑↑↑ -->
         </div>
       </div>
     </div>
   </div>
   {% endfor %}
+</div>
+
+<!-- Appointment cancellation modal -->
+<div
+  class="modal fade"
+  id="cancelModal"
+  tabindex="-1"
+  aria-labelledby="cancelModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="cancelModalLabel">
+          Cancel appointment?
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to cancel this appointment? This action cannot be
+        undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+        <a id="cancelConfirm" class="btn btn-danger" href="#">Cancel appointment</a>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock%} {% block copyright %} Copyright @ 2025
 thetreeoflifeholisticentre.com {% endblock copyright %}

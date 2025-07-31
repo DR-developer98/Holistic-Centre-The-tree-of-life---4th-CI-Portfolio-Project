@@ -136,6 +136,11 @@ footer img.logo {
     width: 228px;
 }
 
+.modal-content {
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
 /*MEDIA QUERIES*/
 /*Media query: tablets and smaller (768px and up)*/
 @media screen and (max-width: 768px) {
