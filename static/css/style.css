@@ -141,6 +141,16 @@ footer img.logo {
     color: var(--page-text-color);
 }
 
+#cancelConfirm {
+    color: rgb(184, 3, 3);
+    border: 2px solid rgb(184, 3, 3);
+}
+
+#cancelConfirm:hover {
+    background-color: rgb(184, 3, 3);
+    color: var(--secondary-color);
+}
+
 /*MEDIA QUERIES*/
 /*Media query: tablets and smaller (768px and up)*/
 @media screen and (max-width: 768px) {

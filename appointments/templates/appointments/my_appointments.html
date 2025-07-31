@@ -58,6 +58,7 @@
 </div>
 
 <!-- Appointment cancellation modal -->
+ <!-- How to link modal to Cancel appointment button, CREDIT: I think therefore I blog, Code Institute Project  -->
 <div
   class="modal fade"
   id="cancelModal"
@@ -89,5 +90,11 @@
     </div>
   </div>
 </div>
-{% endblock%} {% block copyright %} Copyright @ 2025
-thetreeoflifeholisticentre.com {% endblock copyright %}
+{% endblock%} 
+{% block copyright %} 
+Copyright @ 2025 thetreeoflifeholisticentre.com 
+{% endblock copyright %}
+
+{% block extras %}
+<script src="{% static 'js/cancel-appointment.js' %}"></script>
+{% endblock %}
