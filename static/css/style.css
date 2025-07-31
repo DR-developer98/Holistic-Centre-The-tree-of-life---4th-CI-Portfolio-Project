@@ -102,20 +102,6 @@ footer img.logo {
     margin: 16px 10px;
 }
 
-/*INDEX.HTML*/
-#get-to-know-them {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 1rem;
-}
-
-#get-to-know-them:hover {
-    border: 2px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
 /*TREATMENTS.HTML*/
 #hero-treatments {
     background: url("../images/hero-image-treatments.jpg") no-repeat center center/cover;
@@ -132,6 +118,8 @@ footer img.logo {
 }
 
 /*MY-APPOINTMENTS.HTML*/
+#no-appointments
+
 .app-management {
     width: 228px;
 }

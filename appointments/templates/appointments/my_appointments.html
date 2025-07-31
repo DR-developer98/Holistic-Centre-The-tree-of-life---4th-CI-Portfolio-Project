@@ -11,7 +11,7 @@
 </div>
 <!-- Displaying user's appointments -->
 <div class="d-flex flex-column align-items-center">
-  {% for appointment in appointments %}
+  {% if appointments %} {% for appointment in appointments %}
   <div class="card mb-3 mx-2 col-12 col-md-10">
     <div class="row g-0">
       <div class="col-md-8">
@@ -52,7 +52,9 @@
       </div>
     </div>
   </div>
-  {% endfor %}
+  {% endfor %} {% else %}
+  <p class="text-center mt-3 higher-weight-text">You currently have no appointments planned.</p>
+  {% endif %}
 </div>
 
 <!-- Appointment cancellation modal -->
@@ -83,7 +85,9 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-        <a id="cancelConfirm" class="btn btn-danger" href="javascript:void(0);">Cancel appointment</a>
+        <a id="cancelConfirm" class="btn btn-danger" href="javascript:void(0);"
+          >Cancel appointment</a
+        >
       </div>
     </div>
   </div>
