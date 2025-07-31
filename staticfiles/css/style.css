@@ -43,7 +43,6 @@
     background: url("../images/hero-landing-page.jpg") no-repeat center center/cover;
 }
 
-
 .scale {
     width: 100%;
     height: auto;
@@ -105,8 +104,6 @@ footer img.logo {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1rem;
-    font-weight: bold;
-    padding: 10px;
 }
 
 #get-to-know-them:hover {

@@ -34,7 +34,9 @@ def make_appointment(request):
             # ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
 
             if conflict:
-                messages.error(request, "This time slot has already been taken. Please select another one.")
+                messages.error(request,
+                               "This time slot has already been taken."
+                               "Please select another one.")
             else:
                 # ↓↓↓ CREDIT:
                 # I think therefore I blog, Code Institute Project ↓↓↓

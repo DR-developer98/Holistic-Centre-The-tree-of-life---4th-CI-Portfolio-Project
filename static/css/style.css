@@ -43,7 +43,6 @@
     background: url("../images/hero-landing-page.jpg") no-repeat center center/cover;
 }
 
-
 .scale {
     width: 100%;
     height: auto;
@@ -64,6 +63,10 @@
     border: 2px solid var(--primary-color);
     background-color: var(--secondary-color);
     color: var(--page-text-color);
+}
+
+.higher-weight-text {
+    font-weight: 500;
 }
 
 /*Navbar styles*/
@@ -105,8 +108,6 @@ footer img.logo {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1rem;
-    font-weight: bold;
-    padding: 10px;
 }
 
 #get-to-know-them:hover {

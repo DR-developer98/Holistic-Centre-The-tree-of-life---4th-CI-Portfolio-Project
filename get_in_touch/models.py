@@ -12,7 +12,7 @@ class Enquiry(models.Model):
     processed = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ["-created_on"] 
+        ordering = ["-created_on"]
     # ↑↑↑ CREDIT: I think therefore I blog CI WTP ↑↑↑
 
     def __str__(self):

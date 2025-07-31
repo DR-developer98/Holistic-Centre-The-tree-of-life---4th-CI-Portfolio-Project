@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import EnquiryForm
 from django.contrib import messages
 
-# Create your views here.
+
 def contact_tol(request):
     """
     Renders the contact form in the get in touch page
@@ -15,15 +15,15 @@ def contact_tol(request):
             enquiry_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Thank you for reaching out to us! We will make sure to get back to you within 2 working days.'
+                'Thank you for reaching out to us! We will make sure \
+                    to get back to you within 2 working days.'
             )
-            #↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
+            # ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
             return redirect('contact')
 
     else:
         enquiry_form = EnquiryForm()
-    #↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
-    
+    # ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
     return render(
         request,
         "get_in_touch/contact.html",
