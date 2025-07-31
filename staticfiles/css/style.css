@@ -136,6 +136,21 @@ footer img.logo {
     width: 228px;
 }
 
+.modal-content {
+    background-color: var(--secondary-color);
+    color: var(--page-text-color);
+}
+
+#cancelConfirm {
+    color: rgb(184, 3, 3);
+    border: 2px solid rgb(184, 3, 3);
+}
+
+#cancelConfirm:hover {
+    background-color: rgb(184, 3, 3);
+    color: var(--secondary-color);
+}
+
 /*MEDIA QUERIES*/
 /*Media query: tablets and smaller (768px and up)*/
 @media screen and (max-width: 768px) {
@@ -156,20 +171,20 @@ footer img.logo {
     }
 
     /*MY-APPOINTMENTS.HTML*/
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width: 621px){
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: auto;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 891px){
     /*MY-APPOINTMENTS.HTML*/
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: 10px;
     }
 }

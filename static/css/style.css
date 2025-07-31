@@ -171,20 +171,20 @@ footer img.logo {
     }
 
     /*MY-APPOINTMENTS.HTML*/
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width: 621px){
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: auto;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 891px){
     /*MY-APPOINTMENTS.HTML*/
-    #cancel-btn {
+    .cancel-btn {
         margin-bottom: 10px;
     }
 }

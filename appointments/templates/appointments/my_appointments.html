@@ -32,15 +32,13 @@
           </p>
           <!-- ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓ -->
           <a
-            class="btn app-management"
-            id="cancel-btn"
+            class="btn app-management cancel-btn"
             data-bs-toggle="modal"
             data-bs-target="#cancelModal"
             data-id="{{ appointment.id }}"
-            href="#"
+            href="javascript:void(0);"
+            >Cancel appointment</a
           >
-            Cancel appointment
-          </a>
           <!-- ↑↑↑ CREDIT: I think therefore I blog, Code Institute Project ↑↑↑ -->
           <!-- ↓↓↓ href attribute CREDIT: Microsoft Copilot ↓↓↓ -->
           <a
@@ -58,7 +56,7 @@
 </div>
 
 <!-- Appointment cancellation modal -->
- <!-- How to link modal to Cancel appointment button, CREDIT: I think therefore I blog, Code Institute Project  -->
+<!-- How to link modal to Cancel appointment button, CREDIT: I think therefore I blog, Code Institute Project  -->
 <div
   class="modal fade"
   id="cancelModal"
@@ -85,16 +83,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-        <a id="cancelConfirm" class="btn btn-danger" href="#">Cancel appointment</a>
+        <a id="cancelConfirm" class="btn btn-danger" href="javascript:void(0);">Cancel appointment</a>
       </div>
     </div>
   </div>
 </div>
-{% endblock%} 
-{% block copyright %} 
-Copyright @ 2025 thetreeoflifeholisticentre.com 
-{% endblock copyright %}
-
-{% block extras %}
+{% endblock%} {% block copyright %} Copyright @ 2025
+thetreeoflifeholisticentre.com {% endblock copyright %} {% block extras %}
 <script src="{% static 'js/cancel-appointment.js' %}"></script>
 {% endblock %}
