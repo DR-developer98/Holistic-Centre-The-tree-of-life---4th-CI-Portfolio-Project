@@ -46,9 +46,6 @@
               <a class="nav-link {% if request.path == treatments_url %}active{% endif %}" href="{% url 'treatments' %}">Treatments</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Team</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link {% if request.path == get_in_touch_url %}active{% endif %}" href="{% url 'contact' %}">Get in touch</a>
             </li>
             {% if user.is_authenticated %}
