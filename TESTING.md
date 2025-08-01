@@ -2,7 +2,7 @@
 I tested that this website works across some of the major Browsers: Google Chrome, Mozilla Firefox, Opera and Brave (the latter was tested on my personal mobile phone: Samsung A52). I also ran manual tests on the following devices and the website worked on all of them as expected.
 
 <ul>
-<li><strong>Mobile phones:</strong> Samsung A52, Iphone 7 Plus;</li>
+<li><strong>Mobile phone:</strong> Samsung A52</li>
 <li><strong>Tablet:</strong> Galaxy Tab A (2016);</li>
 <li><strong>Laptop:</strong> Lenovo.</li>
 </ul>
