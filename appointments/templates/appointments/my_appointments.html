@@ -1,12 +1,11 @@
 {% extends "base.html" %} {% block content %} {% load static %} 
 {% load crispy_forms_tags %}
-
 <div>
   <h1 class="text-center mt-3 mb-2">My appointments</h1>
 </div>
 <div class="mx-2">
   {% if messages %} {% for message in messages %}
-  <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+  <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
   {% endfor %} {% endif %}
 </div>
 <!-- Displaying user's appointments -->
@@ -93,6 +92,7 @@
   </div>
 </div>
 {% endblock%} {% block copyright %} Copyright @ 2025
-thetreeoflifeholisticentre.com {% endblock copyright %} {% block extras %}
-<script src="{% static 'js/appointment.js' %}"></script>
+thetreeoflifeholisticentre.com {% endblock copyright %} 
+{% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

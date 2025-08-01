@@ -1,15 +1,22 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <div class="hero-image hero-home-appointment">
+  <div class="mx-2">
+    {% if messages %} {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
+    {% endfor %} {% endif %}
+  </div>
   <div class="overlay">
     <h1 class="text-center">The tree of life</h1>
     <h2 class="text-center">Holistic centre</h2>
     <p class="ms-2">
-      <em class="higher-weight-text">Relax. Recharge. Reconnect. Step into a sanctuary of calm where your
-      well-being comes first. At the Holistic centre "The tree of life", we offer
-      personalized treatments designed to relieve tension, restore balance, and
-      leave you feeling renewed—body and mind. Whether you seek deep tissue
-      therapy or a moment of quiet escape, our
-      experienced therapists are here to guide you back to yourself.</em>
+      <em class="higher-weight-text"
+        >Relax. Recharge. Reconnect. Step into a sanctuary of calm where your
+        well-being comes first. At the Holistic centre "The tree of life", we
+        offer personalized treatments designed to relieve tension, restore
+        balance, and leave you feeling renewed—body and mind. Whether you seek
+        deep tissue therapy or a moment of quiet escape, our experienced
+        therapists are here to guide you back to yourself.</em
+      >
     </p>
   </div>
 </div>
@@ -20,17 +27,14 @@
       {% for employee in employee_list %}
       <div class="col-12 col-md-6 col-lg-3 mb-4 text-center">
         {% if "nobody" in employee.featured_image.url %}
-      <img
-        src="{% static 'images/nobody.jpg' %}"
-        alt="placeholder image"
-      />
-      {% else %}
-      <img
-        class="scale"
-        src="{{ employee.featured_image.url }}"
-        alt="{{ employee.full_name }}"
-      />
-      {% endif %}
+        <img src="{% static 'images/nobody.jpg' %}" alt="placeholder image" />
+        {% else %}
+        <img
+          class="scale"
+          src="{{ employee.featured_image.url }}"
+          alt="{{ employee.full_name }}"
+        />
+        {% endif %}
         <!-- ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓ -->
         <h3>{{ employee.full_name }}</h3>
       </div>
@@ -40,4 +44,6 @@
   </div>
 </div>
 {% endblock %} {% block copyright %} Copyright @ 2025
-thetreeoflifeholisticentre.com {% endblock copyright %}
+thetreeoflifeholisticentre.com {% endblock copyright %} {% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

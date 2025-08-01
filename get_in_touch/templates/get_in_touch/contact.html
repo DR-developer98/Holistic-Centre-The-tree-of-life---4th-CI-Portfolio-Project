@@ -2,6 +2,11 @@
 {% load crispy_forms_tags %}
 
 <div class="hero-image" id="hero-contact">
+  <div class="mx-2">
+  {% if messages %} {% for message in messages %}
+  <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+  {% endfor %} {% endif %}
+</div>
   <div class="overlay">
     <h1 class="text-center">Contact</h1>
   </div>
@@ -73,3 +78,6 @@
 {% endblock%}
 {% block copyright %} Copyright @ 2025
 thetreeoflifeholisticentre.com {% endblock copyright %}
+{% block extras %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
