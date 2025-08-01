@@ -2,9 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 # ↓↓↓ CREDIT: Microsoft Copilot ↓↓↓
 from django.contrib.auth.decorators import login_required
 # ↑↑↑ CREDIT: Microsoft Copilot ↑↑↑
+from django.contrib import messages
 from .models import Appointment
 from .forms import AppointmentForm
-from django.contrib import messages
+
+
+# Create your views here
 
 
 @login_required

@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from treatments.models import Treatment
 from home.models import Employee
 
+# Create your models here
+
 
 class Appointment(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE)

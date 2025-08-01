@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
-from .forms import EnquiryForm
 from django.contrib import messages
+from .forms import EnquiryForm
+
+# Create your views here
 
 
 def contact_tol(request):

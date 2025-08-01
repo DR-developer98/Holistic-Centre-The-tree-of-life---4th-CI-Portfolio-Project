@@ -1,6 +1,8 @@
 from django.db import models
-from home.models import Employee
 from cloudinary.models import CloudinaryField
+from home.models import Employee
+
+# Create your models here
 
 
 class Treatment(models.Model):

@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Treatment
 
+# Create your views here
+
 
 def treatments_list(request):
     """

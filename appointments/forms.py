@@ -1,5 +1,7 @@
-from .models import Appointment
 from django import forms
+from .models import Appointment
+
+# Create your forms here
 
 
 class AppointmentForm(forms.ModelForm):
