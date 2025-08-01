@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --primary-color: #254633;
     --secondary-color: #ecdbb3;
@@ -71,7 +78,11 @@
 
 /* ↓↓↓ CREDIT: Stackoverflow.com ↓↓↓ */
 .alert {
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   opacity: 1;
 }
 
@@ -130,8 +141,6 @@ footer img.logo {
 }
 
 /*MY-APPOINTMENTS.HTML*/
-#no-appointments
-
 .app-management {
     width: 228px;
 }

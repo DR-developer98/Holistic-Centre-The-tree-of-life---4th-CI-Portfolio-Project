@@ -13,10 +13,14 @@ For responsiveness and tests on devices larger than the ones mentioned above I u
 <h3>HTML Validator</h3>
 
 <h3>CSS Validator</h3>
+<img src="images-README/W3C-CSS-Validator.PNG" alt="W3C CSS Validator results">
 
 <h3>JS Hint Validator</h3>
+<img src="images-README/JS-Hint-Validator-results.PNG" alt="JS Hint Validator results">
 
-<h3>PEP8 Validator</h3>
+<h3>CI Python Linter</h3>
+<p>I passed all python code through the linter and no errors were returned. Here below an example (get-in-touch>views.py)</p>
+<img src="images-README/CI-Python-linter.PNG" alt="example CI Python linter">
 
 <h3>Lighthouse report</h3>
 
