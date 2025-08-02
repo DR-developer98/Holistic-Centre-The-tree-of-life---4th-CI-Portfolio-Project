@@ -9,7 +9,7 @@
 <li>the website administrator, allowing them to manage the content of the website.</li>
 </ul>
 
-<h2>User stories</h2>
+<h2 style="color: darkorange">User stories</h2>
 <ol>
 <li>As a Site admin, I can add, edit or delete the centre's employees' profiles, so that I can keep the employees list up to date;</li>
 <li>As a customer, I can view the list of treatments with their price, so that I can choose the one that's most suitable to me within my buget;</li>
@@ -28,12 +28,21 @@
 <br>
 <p>Link to repository: <a href="https://github.com/DR-developer98/Holistic-Centre-The-tree-of-life---4th-CI-Portfolio-Project" target="_blank">Holistic-Centre-The-tree-of-life---4th-CI-Portfolio-Project
 </a></p>
-<p>Link to deployed project: <a href="" target="_blank">Holistic centre "The tree of life"</a></p>
+<p>Link to deployed project: <a href="https://the-tree-of-life-ol-centre-ac3c31ef4891.herokuapp.com/" target="_blank">Holistic centre "The tree of life"</a></p>
 
+<h2 style="color: darkorange">ERD</h2>
+<h3>Complete Entity Relationship Diagram</h3>
+<img src="images-README/ERD.png">
 
-<h2 style="color: darkorange">Features</h2>
+<h3>Relationships</h3>
+<img src="images-README/Employee-id-appointment.PNG">
+<img src="images-README/Employee-id-practicioner.PNG">
+<img src="images-README/Treatment-id-treatment-id-app.PNG">
+<img src="images-README/User-id-customer-id-app.PNG">
 
-<h3 style="color: gold">Future implementations</h3>
+<h2 style="color: darkorange">Features/Implementation of user stories</h2>
+
+<h3>Future implementations</h3>
 <p>In the future, the following features can be added to this application:</p>
 <ul>
 <li>An "About us" page, with some background information about each employee; this app can be furthered enhanced by adding a "Make an appointment" button that prepopulates the appointment form with the name of the employee, in this way enabling the user to make an appointment with preferred employee;</li>
@@ -61,7 +70,8 @@
 <ul>
 <li>The website logo, the images of the employees and the treatments were created with <a href="https://copilot.microsoft.com/chats/GB3BA3usiipHcgySkE9RN" target="_blank">Microsoft Copilot</a></li>
 <li>The hero-images in the home page, treatments, get in touch and make an appointment page were created using <a href="https://leonardo.ai/" target="_blank">Leonardo.AI</a></li>
-<li></li>
+<li>The ERD was created using <a href="https://dbdiagram.io/" target="_blank">dbdiagram.io</a></li>
+<li><a href="https://dbs.ci-dbs.net/" target="_blank">PostgreSQL from Code Institute</a> was used to create the database;</li>
 <li>Django (Python) was used for building and managing the project and its different apps;</li>
 <li>HTML was used for the templates' structure;</li>
 <li>CSS was used for the styling and the buttons hover effects;</li>

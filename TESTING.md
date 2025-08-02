@@ -8,9 +8,29 @@ I tested that this website works across some of the major Browsers: Google Chrom
 </ul>
 For responsiveness and tests on devices larger than the ones mentioned above I used the BrowserDev Tools.
 
-<h2>Validator testing</h2>
+<h2 style="color: darkorange">Validator testing</h2>
 
 <h3>HTML Validator</h3>
+<p><strong>Home page</strong></p>
+<img src="images-README/W3C-HTML-Validator-home.PNG" alt="HTML Validator home page">
+
+<p><strong>Treatments</strong></p>
+<img src="images-README/W3C-HTML-Validator-treatments.PNG" alt="HTML Validator treatments">
+
+<p><strong>Get in touch</strong></p>
+<img src="images-README/W3C-HTML-Validator-get-in-touch.PNG" alt="HTML Validator get in touch">
+
+<p><strong>My appointments</strong></p>
+<img src="images-README/W3C-HTML-Validator-my-appointments.PNG" alt="HTML Validator my appointments">
+
+<p><strong>Make appointment</strong></p>
+<img src="images-README/W3C-HTML-Validator-make-appointment.PNG" alt="HTML Validator make appointment">
+
+<p><strong>Sign out</strong></p>
+<img src="images-README/W3C-HTML-Validator-signout.PNG" alt="HTML Validator signout">
+
+<p><strong>Sign in</strong></p>
+<img src="images-README/W3C-HTML-Validator-signin.PNG" alt="HTML Validator signin">
 
 <h3>CSS Validator</h3>
 <img src="images-README/W3C-CSS-Validator.PNG" alt="W3C CSS Validator results">
@@ -24,8 +44,246 @@ For responsiveness and tests on devices larger than the ones mentioned above I u
 
 <h3>Lighthouse report</h3>
 
+<h2>Manual Testing</h2>
+<table>
+<tr>
+<th style="color: gold">Action</th>
+<th style="color: gold">Expected behaviour</th>
+<th style="color: gold">Pass/Fail</th>
+<tr>
+<tr>
+<td><strong style="color: gold">START PAGE</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-<h3 style="color: darkorange">Fixed bugs</h3>
+<h2 style="color: darkorange">Fixed bugs</h2>
 
 <ul>
 <li>When building the landing page for the website, although I had populated the website with the employees by means of a fixture, the employees weren't showing up on the page. This was due to the fact that I had changed the name of the app, but forgot to adapt the model name in the JSON-object. This was fixed by setting the value of "model" to "home.employee".</li>

@@ -14,6 +14,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="image" href="{% static 'images/hero-landing-page.jpg' %}">
+    <link rel="preload" as="image" href="{% static 'images/hero-image-contact.jpg' %}">
+    <link rel="preload" as="image" href="{% static 'images/hero-image-treatments.jpg' %}">
     <title>Holistic centre "The tree of life"</title>
     
     <!-- Favicons -->
@@ -59,7 +62,7 @@
                 class="nav-link {% if request.path == logout_url %}active{% endif %}"
                 aria-current="page"
                 href="{% url 'account_logout' %}"
-                >Log out</a
+                >Sign out</a
               >
             </li>
             <li class="nav-item">

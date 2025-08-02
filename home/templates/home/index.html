@@ -30,6 +30,7 @@
         <img src="{% static 'images/nobody.jpg' %}" alt="placeholder image" />
         {% else %}
         <img
+          id="employee-image"
           class="scale"
           src="{{ employee.featured_image.url }}"
           alt="{{ employee.full_name }}"

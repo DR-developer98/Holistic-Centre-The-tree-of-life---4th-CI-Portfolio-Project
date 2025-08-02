@@ -163,6 +163,10 @@ footer img.logo {
 /*MEDIA QUERIES*/
 /*Media query: tablets and smaller (768px and up)*/
 @media screen and (max-width: 768px) {
+    /*INDEX.HTML*/
+    #employee-image {
+        width: 50%;
+    }
 
     /*General styles*/
     .card {
@@ -192,6 +196,10 @@ footer img.logo {
 }
 
 @media screen and (min-width: 768px) and (max-width: 891px){
+    /*INDEX.HTML*/
+    #employee-image {
+        height: 50%;
+    }
     /*MY-APPOINTMENTS.HTML*/
     .cancel-btn {
         margin-bottom: 10px;
