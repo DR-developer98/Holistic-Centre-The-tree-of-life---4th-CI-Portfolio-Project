@@ -43,6 +43,7 @@ For responsiveness and tests on devices larger than the ones mentioned above I u
 <img src="images-README/CI-Python-linter.PNG" alt="example CI Python linter">
 
 <h3>Lighthouse report</h3>
+<img src="images-README/lighthouse-report.PNG">
 
 <h2>Manual Testing</h2>
 <table>

@@ -58,6 +58,23 @@
 
 <h2 style="color: darkorange">Features/Implementation of user stories</h2>
 <h3 id="appointments" style="color: darkgreen">1. Appointments full CRUD functionalities:</h3>
+For the following user stories, in appointments>models.py I created this custom model:
+
+<img src="images-README/appointment-model.PNG">
+
+I registered it in the admin panel:
+
+<img src="images-README/appointment-admin-registration.PNG">
+
+I created the form:
+
+<img src="images-README/appointment-formspy.PNG">
+
+And finally, created the relevant view:
+
+<img src="images-README/part-one-appointment-view.PNG">
+<img src="images-README/part-two-appointment-view.PNG">
+
 <h4 style="color: gold">As the business owner, I want a prominent "Make an appointment button" on the website, so that my prospective customers can easily make an appointment and I can increase my clientele;</h4>
 <p><strong>Acceptance criteria<strong></p>
 <ul>
@@ -147,7 +164,7 @@ After clicking on "Update appointment", the user is redirected to "My appointmen
 <img src="images-README/success-message-edit-app.png">
 </ul>
 
-<h3 style="color: darkorange">2. Employees</h3>
+<h3 id="employees" style="color: darkorange">2. Employees</h3>
 <h4 style="color: gold">As a Site admin, I can add, edit or delete the centre's employees' profiles, so that I can keep the employees list up to date;</h4>
 For this user story, in home>models.py, I created the following Employee custom model:
 <img src="images-README/employee-model.PNG">
@@ -185,7 +202,7 @@ When selecting an employee, in the information edit screen that appears, one can
 <img src="images-README/succesful-employee-deletion.PNG">
 </ul>
 
-<h3 style="color: darkorange">3. Treatments</h3>
+<h3 id="treatments" style="color: darkorange">3. Treatments</h3>
 
 <h4 style="color: gold">As a Site admin, I can add, inspect, delete or edit treatments from the list, so that I can manage the website content</h4>
 For this user story, in treatments>models.py, I created the following custom model:
@@ -244,8 +261,84 @@ This section of the website displays a list of cards, one for each treatment ite
 <img src="images-README/part-three-treatments-list.PNG">
 
 <h3 style="color: darkorange">4. Getting in touch with the holistic centre</h3>
+For the next user stories, in get_in_touch>models.py I created the following custom model:
+
+<img src="images-README/enquiry-model.PNG">
+
+I registered the model in the admin panel:
+
+<img src="images-README/enquiry-model-admin-registrated.PNG">
+
+I created the relevant form:
+
+<img src="images-README/enquiry-form-formspy.PNG">
+
+And designed the relevant view:
+
+<img src="images-README/enquiry-form-view.PNG">
+
+<h4 id="git" style="color: gold">As a Prospective customer, I can get in touch with the holistic centre, so that I can ask questions</h4>
+<p><strong>Acceptance criteria<strong></p>
+<ul>
+<li style="color: yellow">Acceptance criterion 1: <em>The website should comprise a "Get in touch" page;</em></li>
+In the navigation bar, I included a "Get in touch" link. When clicked, it redirects the user to a Contact page.
+
+<img src="images-README/get-in-touch-navlink-contact-page.PNG">
+
+<li style="color: yellow">Acceptance criterion 2: <em>There should be a list with several ways to get in touch with the centre;</em></li>
+Below the hero-image, the user is presented with a list of several ways to get in touch with the center, namely an email, phone number, the physical address of the holistic centre. Further at the bottom of the page, this section comprises a contact form.
+
+<img src="images-README/ways-to-get-in-touch.PNG">
+
+<li style="color: yellow">Acceptance criterion 3: <em>There should be a form that I can fill out for longer/more detailed enquiries.</em></li>
+Please refer to the screenshot above.
+<li style="color: yellow">Acceptance criterion 4: <em>I should receive a clear feedback message upon succesfully submitting the form;</em></li>
+The form has to be filled out in its entirety. Failing to do so, will result in being prompted to fill in the empty field.
+
+<img src="images-README/filled-out-contact-form.PNG">
+
+After submitting, the contact page will be rerendered and show a success message above the "Contact" heading.
+
+<img src="images-README/success-message-contact.png">
+</ul>
+
+<h4 style="color: gold">As a Site admin, I can store the sent in enquiries in the database, so that I can review them</h4>
+<p><strong>Acceptance criteria<strong></p>
+<ul>
+<li style="color: yellow">Acceptance criterion 1: <em>In the admin-panel there should be a section dedicated to the submitted enquiries</em></li>
+In the admin panel, there is a section dedicated to Enquiries.
+<img src="images-README/enquiries-section-admin-panel.PNG">
+
+<img src="images-README/enquiries-list-admin-panel.PNG">
+
+In the overview, as an admin you get a preview of the message. By clicking on one of the enquiries, one can get access to the whole content.
+
+<img src="images-README/whole-content-enquiry-review.PNG">
+</ul>
+
+<h4 style="color: gold">As a Site admin, I can mark the sent in enquiries as "processed", so that I can see how many I still need to process</h4>
+<p><strong>Acceptance criteria<strong></p>
+<ul>
+<li style="color: yellow">Acceptance criterion 1: <em>When logged in as a site admin, I should be able to tick "processed" for an answered enquiry;</em></li>
+When reviewing an enquiry item, by checking "processed" and clicking on "Save", the enquiry will be displayed on the list with a green check sign.
+
+<img src="images-README/enquiry-checked-processed.PNG">
+
+<img src="images-README/updated-status-enquiry-on-list.PNG">
+
+<li style="color: yellow">Acceptance criterion 2: <em>I should be able to filter the received requests based on their "processed"/"unprocessed" status.</em></li>
+The enquiries list panel comprises a side panel, which enables the admin to filter the enquiry items based on their processed/unprocessed status.
+
+<img src="images-README/filter-panel-enquiries.PNG">
+
+By clicking on "Yes", one can only show the processed enquiries. By clicking on "No", only the yet to be processed enquiry items will be shown.
+
+<img src="images-README/processed-enquiries-list.PNG">
+
+<img src="images-README/unprocessed-enquiries-list.PNG">
 
 </ul>
+
 <h3>Future implementations</h3>
 <p>In the future, the following features can be added to this application:</p>
 <ul>
