@@ -111,6 +111,10 @@ def edit_appointment(request, appointment_id):
 
 @login_required
 def cancel_appointment(request, appointment_id):
+    """
+    Handles the deletion of an appointment record
+    based on the appointment_id
+    """
     appointment = get_object_or_404(Appointment, id=appointment_id,
                                     customer=request.user)
     appointment.delete()

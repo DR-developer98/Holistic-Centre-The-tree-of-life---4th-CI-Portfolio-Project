@@ -70,10 +70,27 @@ I created the form:
 
 <img src="images-README/appointment-formspy.PNG">
 
-And finally, created the relevant view:
+And finally, created the relevant views:
+
+APPOINTMENT MAKING
 
 <img src="images-README/part-one-appointment-view.PNG">
+
 <img src="images-README/part-two-appointment-view.PNG">
+
+APPOINTMENTS LIST DISPLAY
+
+<img src="images-README/display-appointment-view.PNG">
+
+APPOINTMENT DETAILS MODIFICATION
+
+<img src="images-README/edit-appointment-view-part-one.PNG">
+
+<img src="images-README/edit-appointment-view-part-two.PNG">
+
+APPOINTMENT CANCELLATION
+
+<img src="images-README/delete-appointment-view.PNG">
 
 <h4 style="color: gold">As the business owner, I want a prominent "Make an appointment button" on the website, so that my prospective customers can easily make an appointment and I can increase my clientele;</h4>
 <p><strong>Acceptance criteria<strong></p>
@@ -353,6 +370,38 @@ By clicking on "Yes", one can only show the processed enquiries. By clicking on 
 <p>For the testing part, including fixed bugs, please refer to <a href="TESTING.md">TESTING.md</a></p>
 
 <h2 style="color: darkorange">Deployment</h2>
+<p>This project was developped on Heroku.</p>
+<p>Once you're logged in on Heroku, go to your dashboard and from there follow the steps hereinafter.</p>
+<ol>
+<li>Click on "New" --> "Create new app"</li>
+<li>Choose a unique name, choose your region and press "Create app";</li>
+<li>Click on "Settings" and then "Reveal Config Vars"</li>
+<li>Add a key of "DISABLE_COLLECTSTATIC" with a value of '1'.</li>
+<li>Add a key of "DATABASE_URL" - the value will be the URL you were emailed when creating your database.</li>
+<li>Add a key of "SECRET_KEY" - the value will the secret key you created yourself or a randomly generated one (Google "Secret key generator" is a good tool to create such a random string of numbers, letters and characters")</li>
+<li>In your terminal, type the code you will need to install the project requirements:
+<ul>
+<li>pip3 install gunicorn~=20.1</li>
+<li>pip3 install -r requirements.txt</li>
+<li>pip3 freeze --local > requirements.txt</li>
+</ul>
+</li>
+<li>Create an "env.py" file at the root directory which contains the following:
+<ul>
+<li>import os</li>
+<li>os.environ["DATABASE_URL"]="CI database URL"</li>
+<li>os.environ["SECRET_KEY"]= "Your secret key"</li>
+</ul>
+</li>
+<li>Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)</li>
+<li>In settings.py, set DEBUG to False.</li>
+It is paramount to always set DEBUG to False before deploying your project on Heroku. This is for security reasons.
+<li>Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py</li>
+<li>Add, commit and push your code.</li>
+<li>Go back to Heroku, click on the "Deploy" tab.</li>
+<li>Connect your project to GitHub.</li>
+<li>Scroll to the bottom and click "Deploy Branch" and your project will be deployed.</li>
+</ol>
 
 <h2 style="color: darkorange">Credits</h2>
 <h3>Content</h3>
