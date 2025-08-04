@@ -7,6 +7,13 @@ from home.models import Employee
 
 
 class Appointment(models.Model):
+    """
+    Stores an appointment entry related to :model:`auth.User`,
+    :model:`treatments.models.Treatment`
+    :model:`home.models.Employee`.
+    Couples appointment date, time and employee to
+    avoid double bookings for the same treatment.
+    """
     customer = models.ForeignKey(User, on_delete=models.CASCADE)
     treatment = models.ForeignKey(Treatment, on_delete=models.CASCADE)
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE)

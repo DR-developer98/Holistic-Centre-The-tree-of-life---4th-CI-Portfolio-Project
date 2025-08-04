@@ -4,7 +4,9 @@ from django.db import models
 
 
 class Enquiry(models.Model):
-
+    """
+    Stores a single enquiry item
+    """
     name = models.CharField(max_length=100)
     subject = models.CharField(max_length=200)
     email = models.EmailField(max_length=100)

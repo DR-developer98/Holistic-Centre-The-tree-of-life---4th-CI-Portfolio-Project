@@ -13,8 +13,21 @@ from .forms import AppointmentForm
 @login_required
 def make_appointment(request):
     """
-    Renders the appointment booking form in the
-    'Make an appointment' page
+    Displays and processes the appointment booking form.
+
+    **Functionality**
+    - Requires user authentication.
+    - On GET request: Presents a blank `AppointmentForm`.
+    - On POST request: Validates and processes form data.
+    - Checks for appointment time conflicts with the practitioner.
+    - Saves the appointment if there's no conflict.
+    - Displays relevant success or error messages.
+
+    **Context**
+    - `appointment_form`: Instance of `AppointmentForm`.
+
+    **Template**
+    - Renders form at :template:`appointments/make_appointment.html`
     """
     appointment_form = AppointmentForm()
 
@@ -62,7 +75,18 @@ def make_appointment(request):
 @login_required
 def user_appointments(request):
     """
-    Display all appointments made by the currently logged-in user
+    Lists all appointments made by the logged-in user.
+
+    **Functionality**
+    - Requires user authentication.
+    - Fetches and displays user's appointments, ordered chronologically.
+
+    **Context**
+    - `appointments`: Queryset of the user's appointments ordered 
+    by date and time.
+
+    **Template**
+    - Renders the list at :template:`appointments/my_appointments.html`
     """
     appointments = Appointment.objects.filter(customer=request.user)\
         .order_by('appointment_date', 'time')
@@ -76,7 +100,23 @@ def user_appointments(request):
 
 def edit_appointment(request, appointment_id):
     """
-    Handles appointment modification
+    Allows the logged-in user to modify an existing appointment.
+
+    **Functionality**
+    - Retrieves appointment by `appointment_id` belonging to the current user.
+    - On GET request: Pre-populates form with current appointment data.
+    - On POST request:
+    - Validates updated form.
+    - Checks for appointment conflicts excluding current instance.
+    - Saves updated appointment if no conflict occurs.
+    - Displays appropriate success or error messages.
+
+    **Context**
+    - `appointment_form`: Instance of `AppointmentForm`
+    tied to the appointment.
+
+    **Template**
+    - Renders form at :template:`appointments/edit_appointment.html`
     """
     # ↓↓↓ CREDIT: I think therefore I blog, Code Institute Project ↓↓↓
     appointment = get_object_or_404(
@@ -112,8 +152,16 @@ def edit_appointment(request, appointment_id):
 @login_required
 def cancel_appointment(request, appointment_id):
     """
-    Handles the deletion of an appointment record
-    based on the appointment_id
+    Deletes a specific appointment made by the user.
+
+    **Functionality**
+    - Requires user authentication.
+    - Retrieves appointment via `appointment_id` and deletes it.
+    - Displays confirmation message and redirects to the user's 
+    appointments list.
+
+    **Template**
+    - No template rendered; redirects to :view:`user_appointments`
     """
     appointment = get_object_or_404(Appointment, id=appointment_id,
                                     customer=request.user)

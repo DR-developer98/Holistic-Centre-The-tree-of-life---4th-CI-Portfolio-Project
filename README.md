@@ -436,6 +436,7 @@ It is paramount to always set DEBUG to False before deploying your project on He
 <li>The physical address, the email and phone number were all made up by me. Once again, any reference to existing places, email addresses and phone numbers are totally unintentional;</li>
 <li>The website logo, the images of the employees and the treatments were created with <a href="https://copilot.microsoft.com/chats/GB3BA3usiipHcgySkE9RN" target="_blank">Microsoft Copilot</a></li>
 <li>The hero-images in the home page, treatments, get in touch and make an appointment page were created using <a href="https://leonardo.ai/" target="_blank">Leonardo.AI</a></li>
+<li>The default image "nobody.jpg" was taken from the Code Institute project "I think, therefore I blog".</li>
 <li>The ERD was created using <a href="https://dbdiagram.io/" target="_blank">dbdiagram.io</a></li>
 <li><a href="https://dbs.ci-dbs.net/" target="_blank">PostgreSQL from Code Institute</a> was used to create the database;</li>
 <li>Django (Python) was used for building and managing the project and its different apps;</li>

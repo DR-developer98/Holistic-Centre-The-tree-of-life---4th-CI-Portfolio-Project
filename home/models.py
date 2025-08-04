@@ -5,6 +5,9 @@ from cloudinary.models import CloudinaryField
 
 
 class Employee(models.Model):
+    """
+    Stores a single employee item
+    """
     featured_image = CloudinaryField('image', default='nobody')
     name = models.CharField(max_length=100, unique=True)
     last_name = models.CharField(max_length=100, unique=True)

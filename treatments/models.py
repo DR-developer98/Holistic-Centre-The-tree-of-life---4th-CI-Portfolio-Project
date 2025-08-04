@@ -6,6 +6,10 @@ from home.models import Employee
 
 
 class Treatment(models.Model):
+    """
+    Stores a single treatment item and is related to
+    :model:`home.models.Employee`
+    """
     featured_image = CloudinaryField('image', default='placeholder-treatment')
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
