@@ -132,11 +132,11 @@ Time selection
 <li style="color: yellow">Acceptance criterion 3: <em>The customer should receive immediate feedback of succesful booking;</em></li> 
 
 After filling out the form and clicking on "Submit", the Browser will rerender the Appointment making page and show the success message "You're appointment has been booked!" above the page main header. The feedback message which will disappear after a few seconds.
-<img src="images-README/success-message-booking.png">
+<img src="images-README/success-message-appointment-2.png">
 
 In the case of the user selecting a date and time that have already been booked for that specific treatment by someone else, the Browser will show the error message "This time slot has already been taken. Please select another one".
 
-<img src="images-README/error-message-booking.png">
+<img src="images-README/error-message-appointment-2.png">
 </ul>
 
 <h4 style="color: gold">As a Site user, I can register an account, so that I can make an appointment</h4>
@@ -146,15 +146,15 @@ In the case of the user selecting a date and time that have already been booked 
 <li style="color: yellow">Acceptance criterion 1: <em>Given an username and a password, a user can register an account;</em></li> 
 By clicking on the navlink "Sign up", the user gets forwarded to a Sign up page, where they can create an account by entering a username and a password. 
 <br>
-<img src="images-README/sign-up-page.png" style="width: 50%">
+<img src="images-README/User45signup.PNG" style="width: 50%">
 
 <li style="color: yellow">Acceptance criterion 2: <em>Then the user can log in</em></li> 
 After having confirmed the password, by clicking on "Sign up", the user automatically logs in, lands on the home page and is provided feedback of succesful registration.
 
-<img src="images-README/success-message-sign-inup.png">
+<img src="images-README/User45successsignup.png">
 <li style="color: yellow">Acceptance criterion 3: <em>When the user is logged in, they can make an appointment</em></li> 
 When the user is logged in, they can navigate to the make an appointment page and fill out the form to book a treatment.
-<img src="images-README/signed-in-make-app.PNG">
+<img src="images-README/logged-in-can-make-app.PNG.PNG">
 </ul>
 
 <h4 style="color: gold">As a logged in user, I can create, view, update, and delete my own appointments, so that I have full control over my treatment schedule and can manage my time effectively;</h4>
@@ -164,25 +164,28 @@ When the user is logged in, they can navigate to the make an appointment page an
 Please see above section.
 <li style="color: yellow">Acceptance criterion 2: <em>The logged in user should have access to a list of the past and upcoming appointments, ordered in a chronologically fashion;</em></li>
 When the user is logged in, the navlink "My appointments" becomes visible. By clicking on it, the user is redirected to a page, with the heading "My appointments" and a list of appointments in chronological order.
-<img src="images-README/my-appointments-page.PNG">
+<img src="images-README/Damiano-app-chronolog.PNG.PNG">
 <li style="color: yellow">Acceptance criterion 3: <em>The logged in user should be able to cancel an appointment;</em></li>
 <li style="color: yellow">Acceptance criterion 4: <em>The logged in user should receive a confirmation prompt to avoid accidental cancellations;</em></li>
 In each appointment card, below the details, two buttons can be found: "Cancel appointment" and "Modify appointment".
 By clicking on the cancel appointment button, a modal is triggered. In order to complete the cancellation, the user is required to click on the modal button "Cancel appointment". 
-<img src="images-README/cancellation-modal.PNG">
+
+<img src="images-README/Damiano-canellation-modal.PNG">
 
 After the cancellation, the user is provided feedback of the succesful deletion of the appointment item.
 
-<img src="images-README/succesful-cancellation.png" style="width: 75%">
+<img src="images-README/Damiano-success-canc.png.png" style="width: 75%">
 <li style="color: yellow">Acceptance criterion 5: <em>The logged in user should be able to edit the details of the appointment (treatment, date and time);</em></li>
 By clicking on the "Modify appointment" button instead, the user is redirected to an "Modify appointment" page, showing the exact same form found in the "Make an appointment" page. The fields have already been populated with the current appointment information.
 <img src="images-README/current-app-information.PNG">
+
 <img src="images-README/populated-appointment-form.PNG">
-<img src="images-README/new-appointment-information.PNG">
+
+<img src="images-README/Damiano-new-app-info.PNG" style="width: 50%">
 
 <li style="color: yellow">Acceptance criterion 6: <em>The logged in user should receive a confirmation message of succesful update of the appointment details.</em></li>
 After clicking on "Update appointment", the user is redirected to "My appointments", showing the appointment item with the new information.
-<img src="images-README/success-message-edit-app.png">
+<img src="images-README/Damiano-successupdate.png">
 </ul>
 
 <h3 id="employees" style="color: darkorange">2. Employees</h3>
@@ -275,7 +278,7 @@ In the navbar, the visitor (who does not need to be logged in) can access the "T
 This section of the website displays a list of cards, one for each treatment item. Within the card, one can see name, description, duration, price and an indicative image.
 <img src="images-README/admin-treatments-list.PNG">
 
-<img src="images-README/part-one-treatments-list.PNG">
+<img src="images-README/treatments-part-one.PNG">
 
 <img src="images-README/part-two-treatments-list.PNG">
 
@@ -304,7 +307,7 @@ And designed the relevant view:
 <li style="color: yellow">Acceptance criterion 1: <em>The website should comprise a "Get in touch" page;</em></li>
 In the navigation bar, I included a "Get in touch" link. When clicked, it redirects the user to a Contact page.
 
-<img src="images-README/get-in-touch-navlink-contact-page.PNG">
+<img src="images-README/get-in-touch-page.PNG">
 
 <li style="color: yellow">Acceptance criterion 2: <em>There should be a list with several ways to get in touch with the centre;</em></li>
 Below the hero-image, the user is presented with a list of several ways to get in touch with the center, namely an email, phone number, the physical address of the holistic centre. Further at the bottom of the page, this section comprises a contact form.
@@ -320,7 +323,7 @@ The form has to be filled out in its entirety. Failing to do so, will result in 
 
 After submitting, the contact page will be rerendered and show a success message above the "Contact" heading.
 
-<img src="images-README/success-message-contact.png">
+<img src="images-README/confirmation-message-contact-form.png">
 </ul>
 
 <h4 style="color: gold">As a Site admin, I can store the sent in enquiries in the database, so that I can review them</h4>
