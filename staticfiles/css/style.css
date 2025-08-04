@@ -103,6 +103,10 @@ nav {
     font-size: 20px;
 }
 
+nav>div>span>#logstatus {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
 /*Main styles*/
 main {
     background-color: var(--secondary-color);

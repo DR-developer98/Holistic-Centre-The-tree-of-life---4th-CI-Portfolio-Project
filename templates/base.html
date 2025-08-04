@@ -4,7 +4,8 @@
 {% url 'contact' as get_in_touch_url %} 
 {% url 'makeappointment' as appointments_url %} 
 {% url 'myappointments' as my_appointments_url %} 
-{% url 'account_login' as login_url %} {% url 'account_signup' as signup_url %} 
+{% url 'account_login' as login_url %} 
+{% url 'account_signup' as signup_url %} 
 {% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
@@ -70,6 +71,9 @@
             src="{% static 'images/logo-the-tree-of-life.png' %}"
             alt="Holistic centre 'The tree of life' logo"
         /></a>
+        {% if user.is_authenticated %}
+        <span class="text-light fw-bold navbar-text ms-2"> Logged in as {{ user.username }} </span>
+        {% endif %}
         <button
           class="navbar-toggler"
           type="button"
